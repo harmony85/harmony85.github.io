@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+#container {
+	margin: 0;
+	padding: 20px;
+}
+
+#js-slider {
+	width: 950px;
+	margin: 0 auto;
+}
+
+#js-slider-main {
+	position: relative;
+	overflow: hidden;
+}
+
+#js-slider-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#js-slider-img > li {
+	position: relative;
+	float: left;
+}
+
+#js-slider-img > li img {
+	display: block;
+}
+
+.slider-btn {
+	position: absolute;
+	top: 50%;
+	width: 50px;
+	height: 90px;
+	background: #555;
+	color: #fff;
+	font-size: 36px;
+	line-height: 90px;
+	transform: translateY(-50%);
+	text-align: center;
+	cursor: pointer;
+}
+
+.slider-btn:hover {
+	opacity: 0.7;
+}
+
+#js-slider-prev {
+	left: 0;
+	border-radius: 0 20px 20px 0;
+}
+
+#js-slider-next {
+	right: 0;
+	border-radius: 20px 0 0 20px;
+}
+
+#js-slider-controll {
+	margin-top: 10px;
+	text-align: center;
+}
+
+#js-slider-controll > li {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-left: 10px;
+	border-radius: 50%;
+	background: #ccc;
+	cursor: pointer;
+}
+
+#js-slider-controll > li.js-on {
+	background: #999;
+}
+
+#js-slider-controll > li:first-child {
+	margin: 0;
+}
